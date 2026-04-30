@@ -60,14 +60,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             margin: 2rem 0;
-            background: #e0e0e0;
-            padding: 2rem;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-            color: #666;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
         }
 
         .price-badge {
@@ -286,7 +285,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+
+                <!-- Product image: place your photo in an "images" folder next to index.html -->
                 <div class="product-image">
+                    <img src="images/device.jpg" alt="Hotspot-Face MMDVM Monitor device photo">
+                </div>
+
                 <h2>See Your DMR Activity in Real-Time</h2>
                 <p style="font-size: 1.1rem; margin: 1rem 0; color: #666;">
                     The Hotspot-Face MMDVM Monitor brings your Pi-Star hotspot to life with instant callsign lookups, 
@@ -294,6 +298,7 @@
                 </p>
                 <div class="price-badge">£49.99</div>
                 <div class="price-detail">+ postage</div>
+
             </div>
         </div>
     </section>
@@ -335,7 +340,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🔌</div>
-                    <h3>Plug & Play</h3>
+                    <h3>Plug &amp; Play</h3>
                     <p>Pre-configured and ready to use. Simply power on, connect to your network, and start monitoring your DMR activity.</p>
                 </div>
             </div>
@@ -405,4 +410,3 @@
     </footer>
 </body>
 </html>
-
